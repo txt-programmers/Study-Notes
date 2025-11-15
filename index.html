@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Txt-Programmers — Beautifully Styled Web Template</title>
+  <meta name="description" content="A  styled, responsive, accessible single-page website template." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Txt-Programmers Home">
+        <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#7b61ff"/>
+              <stop offset="1" stop-color="#00d4ff"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="45" fill="url(#g)"/>
+          <path d="M30 60 L45 35 L60 60 Z" fill="#fff" opacity="0.9"/>
+        </svg>
+        <span class="brand-name">Txt-Programmers</span>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#Notices and events">Notices and events</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn btn-ghost" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Design fast. Ship faster. ✨</h1>
+          <p class="lead">A beautiful, responsive starter website — accessible, performant, and easily customizable.</p>
+          <div class="cta-row">
+            <a href="#pricing" class="btn btn-primary">View Pricing</a>
+            <a href="#Notices and events" class="btn btn-ghost">Learn More</a>
+          </div>
+          <ul class="stats" aria-hidden="true">
+            <li><strong>99%</strong><span>Performance</span></li>
+            <li><strong>4.9/5</strong><span>Customer rating</span></li>
+            <li><strong>1–2 days</strong><span>Setup</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Decorative card stack -->
+          <div class="card-stack">
+            <div class="card card-1">
+              <div class="card-header">Dashboard</div>
+              <div class="card-body">
+                <div class="bar" style="--w:85%"></div>
+                <div class="bar" style="--w:65%"></div>
+                <div class="bar" style="--w:40%"></div>
+              </div>
+            </div>
+            <div class="card card-2">
+              <div class="card-header">Activity</div>
+              <div class="card-body">
+                <svg viewBox="0 0 100 40" class="spark"><polyline points="0,30 20,10 40,20 60,5 80,20 100,15" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notices and events -->
+    <section id="Notices and events" class="section container" aria-labelledby="Notices and events-title">
+      <h2 id="Notices and events-title" class="section-title">Notices and events that delight</h2>
+      <p class="section-sub">Everything you need to build a modern website quickly.</p>
+
+      <div class="Notices and events-grid" role="list">
+        <article class="feature" role="listitem" aria-labelledby="f1">
+          <div class="icon">⚡</div>
+          <h3 id="f1">Performance-first</h3>
+          <p>Minimal CSS, optimized structure, and lightweight components for fast load times.</p>
+        </article>
+
+        <article class="feature" role="listitem" aria-labelledby="f2">
+          <div class="icon">🎨</div>
+          <h3 id="f2">Polished UI</h3>
+          <p>Visually balanced typography, color system, and delightful micro-interactions.</p>
+        </article>
+
+        <article class="feature" role="listitem" aria-labelledby="f3">
+          <div class="icon">🔒</div>
+          <h3 id="f3">Secure</h3>
+          <p>Accessible patterns, semantic markup and safe form handling guidelines included.</p>
+        </article>
+
+        <article class="feature" role="listitem" aria-labelledby="f4">
+          <div class="icon">⚙️</div>
+          <h3 id="f4">Developer-friendly</h3>
+          <p>Well-structured HTML, variables, and modular code make customization easy.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section alt-section" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title" class="section-title">Pricing</h2>
+        <p class="section-sub">Simple pricing. No surprises.</p>
+
+        <div class="pricing-grid">
+          <div class="card pricing-card">
+            <h3>Starter</h3>
+            <div class="price"><span class="currency">$</span>0<span class="period">/mo</span></div>
+            <ul>
+              <li>One project</li>
+              <li>Basic support</li>
+              <li>Community access</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Start Free</a>
+          </div>
+
+          <div class="card pricing-card featured" aria-hidden="false">
+            <h3>Pro</h3>
+            <div class="price"><span class="currency">$</span>19<span class="period">/mo</span></div>
+            <ul>
+              <li>Unlimited projects</li>
+              <li>Priority support</li>
+              <li>Team collaboration</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Choose Pro</a>
+          </div>
+
+          <div class="card pricing-card">
+            <h3>Enterprise</h3>
+            <div class="price"><span class="currency">Custom</span></div>
+            <ul>
+              <li>Dedicated support</li>
+              <li>Custom SLAs</li>
+              <li>Onboarding & training</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section container" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="section-title">Gallery</h2>
+      <p class="section-sub">Design snippets and components.</p>
+
+      <div class="gallery-grid" role="list">
+        <!-- 6 SVG placeholders -->
+        <figure class="gallery-item" role="listitem" tabindex="0" data-title="Modern Card" data-desc="A sleek card component." aria-label="Gallery item: Modern Card">
+          <svg viewBox="0 0 200 120" class="thumb"><rect rx="10" width="200" height="120" fill="url(#gv1)"/></svg>
+          <figcaption>Modern Card</figcaption>
+        </figure>
+
+        <figure class="gallery-item" role="listitem" tabindex="0" data-title="Analytics" data-desc="Small analytics sparkline." aria-label="Gallery item: Analytics">
+          <svg viewBox="0 0 200 120" class="thumb"><rect rx="10" width="200" height="120" fill="url(#gv2)"/></svg>
+          <figcaption>Analytics</figcaption>
+        </figure>
+
+        <figure class="gallery-item" role="listitem" tabindex="0" data-title="Profile" data-desc="Profile / avatar card." aria-label="Gallery item: Profile">
+          <svg viewBox="0 0 200 120" class="thumb"><rect rx="10" width="200" height="120" fill="url(#gv3)"/></svg>
+          <figcaption>Profile</figcaption>
+        </figure>
+
+        <figure class="gallery-item" role="listitem" tabindex="0" data-title="Charts" data-desc="Interactive charts layout." aria-label="Gallery item: Charts">
+          <svg viewBox="0 0 200 120" class="thumb"><rect rx="10" width="200" height="120" fill="url(#gv4)"/></svg>
+          <figcaption>Charts</figcaption>
+        </figure>
+
+        <figure class="gallery-item" role="listitem" tabindex="0" data-title="Forms" data-desc="Clean accessible forms." aria-label="Gallery item: Forms">
+          <svg viewBox="0 0 200 120" class="thumb"><rect rx="10" width="200" height="120" fill="url(#gv5)"/></svg>
+          <figcaption>Forms</figcaption>
+        </figure>
+
+        <figure class="gallery-item" role="listitem" tabindex="0" data-title="Settings" data-desc="Compact settings UI." aria-label="Gallery item: Settings">
+          <svg viewBox="0 0 200 120" class="thumb"><rect rx="10" width="200" height="120" fill="url(#gv6)"/></svg>
+          <figcaption>Settings</figcaption>
+        </figure>
+      </div>
+
+      <!-- simple modal for gallery -->
+      <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+        <div class="modal-content" role="document">
+          <button id="modal-close" class="modal-close" aria-label="Close gallery item">✕</button>
+          <h3 id="modal-title"></h3>
+          <p id="modal-desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title" class="section-title">What customers say</h2>
+        <div class="testimonials-grid">
+          <blockquote>
+            <p>"Txt-Programmers saved us weeks of work — beautiful defaults and easy overrides."</p>
+            <footer>— Sam K., Founder</footer>
+          </blockquote>
+
+          <blockquote>
+            <p>"Well-documented and thoughtfully designed. Our devs loved it."</p>
+            <footer>— Priya M., Product</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Get in touch</h2>
+      <p class="section-sub">Send us a message — we’ll reply within 1 business day.</p>
+
+      <form id="contact-form" class="contact-grid" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required minlength="2" />
+          <small class="error" id="err-name" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+          <small class="error" id="err-email" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required minlength="10"></textarea>
+          <small class="error" id="err-message" aria-live="polite"></small>
+        </div>
+
+        <div class="form-actions full">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div id="form-success" class="form-success" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <strong>Txt-Programmers</strong>
+        <p class="muted">Beautiful templates for ambitious teams.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#Notices and events">Notices and events</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="copyright">&copy; <span id="year"></span> Txt-Programmers — All rights reserved</div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
